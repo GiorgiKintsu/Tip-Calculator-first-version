@@ -6,9 +6,47 @@
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/fc05d35461.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
 </head>
-<body>
-    
+<body> 
+    <div class="calculator flexCenter">
+        <aside class="leftSide">
+            <div class="billDiv">
+                <label for="bilInput">Bill</label>
+                <input type="number" id="bilInput">
+                <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+            <div class="tipsDiv">
+                <label for="tipInput">Select Tip %</label>
+                <div class="tipButtons">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <input type="number" placeholder="Custom">     
+                </div>
+            </div>
+            <div class="peopleQuantity">
+                <label for="peopleInput">Number of People</label>
+                <input type="text" id="peopleInput">
+                <i class="fa-solid fa-person"></i>
+            </div>
+        </aside>
+        <aside class="rightSide">
+            <div class="result">
+                <div class="tipAmount">
+                    <p>tip amount <br> <span>/ person</span> </p>
+                    <h3>$0.00</h3>
+                </div>
+                <div class="totalAmount">
+                    <p>total <br> <span>/ person</span> </p>
+                    <h3>$0.00</h3>
+                </div>
+            </div>
+            <button id="resetButton">reset</button>
+        </aside>
+    </div>
 </body>
 </html>
