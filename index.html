@@ -14,7 +14,7 @@
         <aside class="leftSide">
             <div class="billDiv">
                 <label for="bilInput">Bill</label>
-                <input type="number" id="bilInput">
+                <input type="number" id="billInput">
                 <i class="fa-solid fa-dollar-sign"></i>
             </div>
             <div class="tipsDiv">
@@ -25,12 +25,15 @@
                     <button>15%</button>
                     <button>25%</button>
                     <button>50%</button>
-                    <input type="number" placeholder="Custom">     
+                    <input type="number" placeholder="Custom" id="customInput">     
                 </div>
             </div>
             <div class="peopleQuantity">
-                <label for="peopleInput">Number of People</label>
-                <input type="text" id="peopleInput">
+                <div>
+                    <label for="peopleInput">Number of People</label>
+                    <p class="error">can't be zero</p>
+                </div>
+                <input type="number" id="peopleInput">
                 <i class="fa-solid fa-person"></i>
             </div>
         </aside>
@@ -45,7 +48,7 @@
                     <h3>$0.00</h3>
                 </div>
             </div>
-            <button id="resetButton">reset</button>
+            <button id="resetButton">RESET</button>
         </aside>
     </div>
 </body>

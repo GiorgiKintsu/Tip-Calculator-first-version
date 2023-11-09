@@ -58,10 +58,14 @@ body{
     text-align: end;
     color: #00474B;
     border-width: 0px;
+    border-radius: 5px;
     outline: none;
     position: relative;
     padding-right: 15px;
     box-sizing: border-box;
+}
+.calculator .leftSide .billDiv input:focus{
+    border: 1px solid #26C2AE;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -107,6 +111,10 @@ input::-webkit-inner-spin-button {
     border-width: 0px;
     border-radius: 5px;
 }
+.calculator .leftSide .tipsDiv .tipButtons button:hover{
+    background-color: #9FE8DF;
+    color: #00474B;
+}
 .calculator .leftSide .tipsDiv .tipButtons input{
     width: 112px;
     height: 45px;
@@ -120,12 +128,28 @@ input::-webkit-inner-spin-button {
     border-width: 0px;
     border-radius: 5px;
 }
+.calculator .leftSide .tipsDiv .tipButtons input:focus{
+    border: 1px solid #26C2AE;
+}
 
 .calculator .leftSide .peopleQuantity{
     display: flex;
     flex-direction: column;
 }
-.calculator .leftSide .peopleQuantity label{
+.calculator .leftSide .peopleQuantity div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calculator .leftSide .peopleQuantity div p{
+    font-family: var(--prymary-font);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 23.7px;
+    color: #E17457;
+    display: none;
+}
+.calculator .leftSide .peopleQuantity div label{
     font-family: var(--prymary-font);
     font-weight: 700;
     font-size: 1rem;
@@ -143,11 +167,15 @@ input::-webkit-inner-spin-button {
     text-align: end;
     color: #00474B;
     border-width: 0px;
+    border-radius: 5px;
     outline: none;
     position: relative;
     padding-right: 15px;
     box-sizing: border-box;
 }
+/* .calculator .leftSide .peopleQuantity input:focus{
+    border: 1px solid #E17457;
+} */
 .calculator .leftSide .peopleQuantity i{
     font-size: 19px;
     position: absolute;
@@ -213,4 +241,9 @@ input::-webkit-inner-spin-button {
     color: #00474B;
     border-radius: 10px;
     border-width: 0px;
+}
+
+.calculator .rightSide button:hover{
+    background-color: #9FE8DF;
+    color: #00474B;
 }
